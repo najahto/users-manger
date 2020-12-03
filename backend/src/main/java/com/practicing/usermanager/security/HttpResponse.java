@@ -1,8 +1,13 @@
 package com.practicing.usermanager.security;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.http.HttpStatus;
 
+import java.util.Date;
+
 public class HttpResponse {
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "MM-dd-yyyy hh:mm:ss")
+    private Date timeStamp;
     private int httpStatusCode;
     private HttpStatus httpStatus;
     private String reason;
@@ -13,6 +18,7 @@ public class HttpResponse {
         this.httpStatus = httpStatus;
         this.reason = reason;
         this.message = message;
+        this.timeStamp = new Date();
     }
 
     public int getHttpStatusCode() {
@@ -45,5 +51,13 @@ public class HttpResponse {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Date getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(Date timeStamp) {
+        this.timeStamp = timeStamp;
     }
 }
