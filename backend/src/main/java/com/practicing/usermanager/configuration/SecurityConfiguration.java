@@ -1,9 +1,9 @@
 package com.practicing.usermanager.configuration;
 
-import com.practicing.usermanager.security.JwtAccessDeniedHandler;
-import com.practicing.usermanager.security.JwtAuthenticationEntryPoint;
-import com.practicing.usermanager.security.JwtAuthorizationFilter;
-import com.practicing.usermanager.security.SecurityConstant;
+import com.practicing.usermanager.filter.JwtAccessDeniedHandler;
+import com.practicing.usermanager.filter.JwtAuthenticationEntryPoint;
+import com.practicing.usermanager.filter.JwtAuthorizationFilter;
+import com.practicing.usermanager.constant.SecurityConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

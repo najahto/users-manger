@@ -1,4 +1,4 @@
-package com.practicing.usermanager.security;
+package com.practicing.usermanager.constant;
 
 public class SecurityConstant {
     public static final long EXPIRATION_TIME = 432_000_000; // 5 days

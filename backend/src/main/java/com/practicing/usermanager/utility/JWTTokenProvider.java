@@ -1,9 +1,10 @@
-package com.practicing.usermanager.security;
+package com.practicing.usermanager.utility;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
+import com.practicing.usermanager.security.UserPrincipal;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -19,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.practicing.usermanager.security.SecurityConstant.*;
+import static com.practicing.usermanager.constant.SecurityConstant.*;
 import static java.util.Arrays.stream;
 
 @Component

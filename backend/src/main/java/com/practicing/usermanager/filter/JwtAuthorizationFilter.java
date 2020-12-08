@@ -1,5 +1,6 @@
-package com.practicing.usermanager.security;
+package com.practicing.usermanager.filter;
 
+import com.practicing.usermanager.utility.JWTTokenProvider;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import static com.practicing.usermanager.security.SecurityConstant.*;
+import static com.practicing.usermanager.constant.SecurityConstant.*;
 
 @Component
 public class JwtAuthorizationFilter extends OncePerRequestFilter {
