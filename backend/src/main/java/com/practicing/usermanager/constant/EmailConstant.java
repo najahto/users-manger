@@ -2,8 +2,8 @@ package com.practicing.usermanager.constant;
 
 public class EmailConstant {
     public static final String SIMPLE_MAIL_TRANSFER_PROTOCOL = "smtps";
-    public static final String USERNAME = "tahaomarnajah@gmail.com";
-    public static final String PASSWORD = "omar183461729461";
+    public static final String USERNAME = "example@mail.com";
+    public static final String PASSWORD = "";
     public static final String FROM_EMAIL = "support@usermanager.com";
     public static final String CC_EMAIL = "";
     public static final String EMAIL_SUBJECT = "User Manager, LLC - New Password";
